@@ -22,7 +22,7 @@
                     <span class="logo-header">Web</span>Studio
                 </a>
                 <ul class="site-nav list">
-                    <li class="item"><a href="" class="link current">Студия </a></li>
+                    <li class="item"><a href="index.html" class="link current">Студия</a></li>
                     <li class="item"><a href="./portfolio.html" class="link">Портфолио </a></li>
                     <li class="item" ><a href="" class="link">Контакты</a></li>
                 </ul>
@@ -47,7 +47,7 @@
             <div class="main-hero">
                 
             <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <a href="" class="button primary">Заказать услугу</a>
+                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
         </section>
     <!--Основной контент-->
@@ -95,17 +95,21 @@
      <section class="section-work">
          <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
-         <ul class="what-wew-do-list">
+        <div><ul class="what-wew-do-list">
              <li class="item">
                      <img src="./images/desktop.jpg" alt="Изображение компьютера" width="370"/>
+                     <h3>ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="item">
                 <img src="./images/notebook.jpg" alt="Изображение ноутбука" width="370"/> 
+                <h3>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
            </li>
            <li class="item">
                 <img src="./images/tablet.jpg" alt="Изображение планшета" width="370"/>
+                <h3>ДИЗАЙНЕРСКИЕ ПРИЛОЖЕНИЯ</h3>
        </li>
          </ul>
+        </div>
         </div>
      </section>
    <!--Наша команда-->
@@ -333,5 +337,18 @@
 </div>
         
         </footer>
+        <div class="backdrop is-hidden" data-modal="">
+            <div class="modal">
+                <button class="close-button" data-modal-close="">
+                    <svg class="icon-envelope link-header">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
+        <div class="mallbery-caa" style="z-index: 2147483647 !important; 
+        text-transform: none !important; position: fixed;">
+        </div>
     </body>
 </html>
