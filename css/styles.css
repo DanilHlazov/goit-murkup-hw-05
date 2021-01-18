@@ -105,6 +105,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style: none;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item .current::after {
@@ -139,6 +140,7 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link.current,
