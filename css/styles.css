@@ -105,6 +105,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item .current::after {
   content: "";
@@ -138,6 +139,7 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link.current,
 .auth-nav .link.current {
@@ -773,6 +775,11 @@ img {
 }
 .portfolio-design {
   text-decoration: none;
+}
+.item .button-filter:hover,
+.item .button-filter:focus-within {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-list {
   margin: -30px;
